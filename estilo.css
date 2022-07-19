@@ -9,7 +9,8 @@ html {
 }
 
 body {
-    background-image: url(img/bubble.png);
+    background: rgb(67,73,68);
+    background: linear-gradient(0deg, rgba(67,73,68,1) 0%, rgba(181,228,207,1) 100%);
     background-attachment: fixed;
     overflow-x: hidden;
 }
@@ -201,7 +202,15 @@ table {
 
 .botonera img {
     margin-bottom: 30px;
+    transition: all 0.3s ease-in-out 0s;
 }
+
+.botonera img:hover {
+    cursor: none;
+    transform: rotate(360deg);
+    transition: all 0.7s ;
+}
+
 
 .botonera ul {
     display: flex;
@@ -215,16 +224,26 @@ table {
 .botonera ul li a {
     font-size: 1.8rem;
     text-decoration: none;
-    color: #0EC25F;
+    background-color: #0EC25F;
     font-weight: bold;
+    border: none;
+    color: white;
+    padding: 15px 5px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 0.8;
+    transition: 0.3s;
 }
 
 
 .botonera ul li a:hover {
     color: #6CCCc9;
     background-color: rgba(0, 255, 255, .1);
-    padding: 15px 5px;
+    padding: 15px 32px;
     border-style: dotted;
+    opacity: 1;
+    cursor: none;
 }
 
 
@@ -233,7 +252,7 @@ table {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(10, 143, 70, .5);
+    background-color: rgba(100, 143, 70, .5);
     margin-top: 50px;
 }
 
@@ -270,10 +289,12 @@ table {
 #productos .galeria figure {
     margin: 10px 0;
     width: 80%;
+    opacity: .7;
 }
 
-figure:hover {
+#productos .galeria figure:hover {
     box-shadow: 0 1px 15px yellow;
+    opacity: 1;
 }
 
 
