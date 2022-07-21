@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Rubik+Moonrocks&display=swap');
+
+body{
+
+	background-color: bg-light;
+}
+
+h1,
+h2,
+h3{
+	font-family: 'Rubik Moonrocks', cursive;
+	color: #6CCCc9;
+}
+
+p{
+	font-family: 'Roboto', sans-serif;
+	color: #939292;
+	font-size: 1.1em;
+	line-height: 1.2em;
+}
+
+.bg-green{
+	background-color: #0E8F5E;
+}
+
+
+.bg-pink{
+	background-color: #6CCCc9;
+}
+
+.btn-pink{
+	background-color: #6CCCc9;
+	color: white;
+}
+
+#botonera img{
+	width: 50px;
+}
+
+	#botonera ul li a{
+		font-family: 'Roboto', sans-serif;
+	}
+
+#botonera ul li a:hover {
+    color: #6CCCc9;
+    background-color: rgba(0, 255, 255, .1);
+    border-style: dotted;
+    opacity: 1;
+}
+
+div a{
+	 text-decoration:none;
+}
+
+
+@media (min-width: 280px) and (max-width: 320px){
+	#botonera img{
+		width: 150px;
+	}
+}
+
+
+article img:hover {
+    box-shadow: 0 1px 15px yellow;
+}
+.legales{
+	padding: 10px;
+	overflow-y: visible;
+}
